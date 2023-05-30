@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Geral</title>
+</head>
+<body>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <for action="cadastro.html" method="get"></for>
+<form>
+    <fieldset><legend><h2>Cadastro Geral</h2></legend>
+    <fieldset><legend><h3>Dados Pessoais</h3></legend>
+
+        <label for="name"class="form_label">Nome:</label><br>
+        <input type="text" name="name" class="form_input" id="name" placeholder="Digite seu nome completo"><br><br>
+
+        <label for="datanascimento" class="form_label">Dta de nascimento:</label><br>
+        <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de nascimento" required><br><br>
+
+        <label for="estadocivil" class="text">Estado civil:</label><br>
+        <select name="estadocivil" class="dropdown" required><br><br>
+
+            <option selected disabled class="form_select_option" value="">Selecione</option>
+            <option value="Solteiro" class="form_select_option">Solteiro(a)</option>
+            <option value="Casado" class="form_select_option">Casado(a)</option>
+            <option value="Divorciado" class="form_select_option">Divorciado(a)</option>
+            <option value="Viúvo" class="form_select_option">Viúvo(a)</option><br><br>
+        </select><br><br>
+
+
+        <label for="profissao" class="text">Profissão:</label><br>
+        <select name="profissao" class="dropdown" required>
+
+        <option selected disabled class="form_select_option" value="">Selecione:</option>
+        <option value="atendente" class="form_select_option">Atendente</option>
+        <option value="vendedor" class="form_select_option">Vendedor</option>
+        <option value="gerente" class="form_select_option">Gerente</option>
+        <option value="op producao" class="form_select_option">Op produção</option>
+        <option value="medico" class="form_select_option">Médico</option>
+    </select><br><br>
+
+    <span class="legenda">Sexo:</span><br><br>
+
+    <input type="radio" class="form_new_input" name="sexo" id="masculino" required="required">
+    <label for="masculino" class="radio_label form_label"><span class="radio_new_btn"></span>Masculino</label><br>
+
+    <input type="radio" class="form_new_input" name="sexo" id="feminino" required="required">
+    <label for="feminino" class="radio_label form_label"><span class="radio_new_btn"></span>Feminino</label><br><br>
+
+    <img src=" https://www.cbvaa.com.br/media/img/a400xa300/2021-02/cadastro.png"> 
+    
+
+    </fieldset><br>
+
+
+    <fieldset><legend><h3>Localização:</h3></legend>
+        <label for="email">E-mail:</label><br>
+        <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@mail.com"><br><br>
+
+        <label for="adress">Endereço:</label><br>
+        <input type="text" name="adress" class="form_input" id="adress" placeholder="Digite seu endereço"><br><br>
+    </fieldset><br><br>
+
+    <fieldset><legend><h3>Faixa Etária:</h3></legend>
+    <input type="radio" name="idade" id="idade">
+    <label for="idade">até 20 anos.</label><br>
+    <input type="radio" name="idade" id="idade">
+    <label for="idade">mais de 20 e até 30 anos.</label><br>
+    <input type="radio" name="idade" id="idade">
+    <label for="idade">mais de 30 e até 40 anos.</label><br>
+    <input type="radio" name="idade" id="idade">
+    <label for="idade">mais de 40 e até 50 anos.</label><br>
+    <input type="radio" name="idade" id="idade">
+    <label for="idade">mais de 50 e até 60 anos.</label><br>
+    <input type="radio" name="idade" id="idade">
+    <label for="idade">mais de 60 anos.</label><br><br>
+  </fieldset><br>
+
+    <fieldset><legend><h3>Esportes que Prática:</h3></legend>
+        <input type="checkbox" name="esporte" id="esporte">
+        <label for="esporte">Futebol de Campo.</label><br>
+        <input type="checkbox" name="esporte" id="esporte">
+        <label for="esporte">Futebol de Salão.</label><br>
+        <input type="checkbox" name="esporte" id="esporte">
+        <label for="esporte">Futebol Society.</label><br>
+        <input type="checkbox" name="esporte" id="esporte">
+        <label for="esporte">Volley de Quadra.</label><br>
+        <input type="checkbox" name="esporte" id="esporte">
+        <label for="esporte">Volley de Praia.</label><br>
+        <input type="checkbox" name="esporte" id="esporte">
+        <label for="esporte">Natação em Mar aberto.</label><br>
+        <input type="checkbox" name="esporte" id="esporte">
+        <label for="esporte">Natação em Piscina.</label><br><br>
+    </fieldset><br>
+
+    <fieldset><legend><h3>Comentário:</h3></legend>
+        <label for="mensagem">Digite sua mensagem:</label><br>
+        <textarea name="mensagem" id="mensagem" cols="50" rows="10"></textarea><br><br>
+    </fieldset><br><br>
+
+    <input type="hidden" name="acao" value="enviar">
+    <button type="submit" name="Submit" class="submit_btn">CADASTRAR</button>
+    <input type="reset" value="LIMPAR">
+    
+</fieldset>
+    
+    </fieldset><br><br>
+</form>
+     
+    
+</body>
+</html>
